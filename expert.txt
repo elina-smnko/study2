@@ -1,0 +1,30 @@
+
+Battery metrics collected include
+Processing (CPU and GPU) time,
+Location usage
+Display
+Network usage
+Camera metrics
+BlueTooth and accessories metrics
+Multimedia metrics.
+
+Hangs. Hangs metric is a histogram of the total time the app becomes unresponsive to the user
+Disk metrics. The disk writes and reads histogram
+Application launch. Shows launch and resume time histogram
+Memory matrix. Average suspended memory and Peak memory usage for the app
+Custom interval metrics. These are the metrics coded by the developer to measure the critical parts of the app.
+
+Metric Kit ↑
+
+Memory graph in Xcode
+SwiftLint (for example) for basic code quality 
+Code repetition (manually or use third-party solutions)
+Xcode instruments -> Activity, Energy usage, Leaks
+Look manually for strong references
+Look for UI warnings in logs (constraints for example)
+Pay attention to Xcode warnings
+Check test coverage
+
+For multithreading use Xcode sanitizer tools:
+Thread Sanitizer—The TSan tool detects race conditions between threads.
+Main Thread Checker—This tool verifies that system APIs that must run on the main thread actually do run on that thread.
